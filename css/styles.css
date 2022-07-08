@@ -17,6 +17,7 @@
 
 
     /*others*/
+    --columns-cl: #7000FF;
 }
 
 body {
@@ -27,6 +28,16 @@ body {
 }
 
 /* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 .link {
     text-decoration: none;
     color: currentColor;
@@ -34,9 +45,24 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* base styles */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid #7000FF;
+    outline-offset: -2px;
+}
+
+
 .btn {
     font-weight: 700;
     font-size: 16px;
@@ -53,6 +79,27 @@ body {
 
 /* Header section */
 
+.header-container {
+    display: flex;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
+.header-nav {
+    margin-right: auto;
+}
+
+.header-list,
+.header-cont-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 50px;
+}
+
 .header-logo-cl {
     color: var(--txt-logo-cl);
 }
@@ -68,7 +115,8 @@ body {
 }
 
 .header-nav,
-.header-list {
+.header-list,
+.header-cont-list {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -87,6 +135,10 @@ body {
 .header-phone,
 .header-mail {
     color: #757575;
+}
+
+.header-mail {
+    margin-right: 50px;
 }
 
 .header-link:hover,
@@ -271,4 +323,17 @@ body {
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: var(--contct-txt-cl);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
