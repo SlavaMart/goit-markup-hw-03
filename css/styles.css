@@ -67,6 +67,8 @@ ul {
 
 
 .btn {
+
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 /12);
@@ -146,7 +148,7 @@ ul {
 .header-phone,
 .header-mail {
     color: #757575;
-    padding-top: 32;
+    padding-top: 32px;
     padding-bottom: 32px;
 }
 
@@ -158,6 +160,7 @@ ul {
 .header-mail:last-child {
     margin-right: 0px;
 }
+
 
 .header-link:hover,
 .header-link:focus,
@@ -176,7 +179,11 @@ ul {
 /* Hero section */
 
 .hero-container {
-    height: 452px;
+    left: 0px;
+    top: 80px;
+
+    background: var(--dark-bg-cl);
+    padding-bottom: 200px;
 }
 
 .hero,
@@ -213,8 +220,6 @@ ul {
     display: block;
     margin: 0 auto;
 
-
-
 }
 
 .hero-btn:hover,
@@ -241,16 +246,20 @@ ul {
 
 
 .peculiarities-subtitle {
+    width: 270px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-txt-cl);
+    margin-bottom: 10px;
 }
 
 
 .peculiarities-desc {
+    width: 270px;
+    height: 75px;
     font-size: 14px;
     line-height: calc(24/14);
     /* or 171% */
@@ -285,13 +294,13 @@ ul {
 .team {
     background-color: var(--ligh-bg-cl);
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
 
 .team-list {
     padding-top: 50px;
-    padding-bottom: 94px;
     display: flex;
     gap: 30px;
 }
@@ -415,6 +424,7 @@ ul {
     display: flex;
     margin: 0 auto;
     padding-top: 94px;
+    margin-left: 280px;
 }
 
 .filter-list:last-child {
@@ -422,11 +432,17 @@ ul {
 }
 
 .filter-btn {
+    min-width: 73px;
+    min-height: 38px;
+    font-family: inherit;
     margin: 8px;
     width: 145px;
     height: 38px;
     left: 712px;
     top: 174px;
+
+    background: var(--ligh-bg-cl);
+    border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -456,11 +472,25 @@ ul {
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 34px;
+
+
 }
 
-.example-item {
+
+.examples-item {
     background-color: var(--card-bg);
-    border: 1px;
+    width: 370px;
+    height: 404px;
+}
+
+.examples-box {
+    width: 322px;
+    height: 70px;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+
 }
 
 
@@ -470,6 +500,7 @@ ul {
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--main-txt-cl);
+
 }
 
 .example-desc {
@@ -478,6 +509,7 @@ ul {
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
     color: var(--contct-txt-cl);
+    margin-top: 4px;
 }
 
 .examples-list {
