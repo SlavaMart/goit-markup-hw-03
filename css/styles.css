@@ -289,6 +289,14 @@ ul {
     padding-top: 50px;
 }
 
+.about-img,
+.team-img,
+.examples-img {
+    display: block;
+}
+
+
+
 /* Team*/
 
 .team {
@@ -296,8 +304,6 @@ ul {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
 
 .team-list {
     padding-top: 50px;
@@ -341,6 +347,12 @@ ul {
     height: 368px;
 }
 
+.team-item-txt {
+    padding-top: 30px;
+
+    padding-bottom: 30px;
+
+}
 
 
 .team-title {
@@ -351,8 +363,6 @@ ul {
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
 }
-
-
 
 .team-img {
     display: block;
@@ -366,7 +376,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    padding-top: 30px;
+
 }
 
 .team-desc {
@@ -377,9 +387,7 @@ ul {
     letter-spacing: 0.03em;
     color: var(--contct-txt-cl);
     padding-top: 10px;
-
 }
-
 
 /* Footer*/
 
@@ -477,20 +485,16 @@ ul {
 
 .examples-item {
     width: 370px;
-    height: 404px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-
 }
 
 .examples-box {
     width: 322px;
-    height: 70px;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    margin-top: 20px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 
