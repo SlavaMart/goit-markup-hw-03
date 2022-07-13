@@ -19,7 +19,7 @@
     /*others*/
     --columns-cl: #7000FF;
     --cards-cl: #FFFFFF;
-
+    --line-cl: #ECECEC;
 }
 
 body {
@@ -89,10 +89,12 @@ ul {
     padding-bottom: 32px;
 } */
 
+
 .header-container {
     display: flex;
     align-items: center;
-    /* padding-top: 32px;
+    border-bottom: 1px solid var(--line-cl)
+        /* padding-top: 32px;
     padding-bottom: 32px; */
 }
 
@@ -153,7 +155,6 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
 
 .header-mail {
     margin-right: 50px;
