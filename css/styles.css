@@ -92,8 +92,8 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 
 .logo {
@@ -135,7 +135,9 @@ ul {
 }
 
 .header-link,
-.header-phone {
+.header-phone,
+.header-mail {
+    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -178,12 +180,17 @@ ul {
 
 /* Hero section */
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .hero-container {
     left: 0px;
     top: 80px;
 
     background: var(--dark-bg-cl);
-    padding-bottom: 200px;
+
 }
 
 .hero,
@@ -201,7 +208,7 @@ ul {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-txt-cl);
-    padding-top: 200px;
+
 }
 
 .hero-btn {
@@ -230,7 +237,7 @@ ul {
 /* Peculiarities */
 
 .peculiarities {
-    padding-top: 124px;
+    padding-top: 94px;
 }
 
 .peculiarities-list {
@@ -281,7 +288,7 @@ ul {
 .about-list {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .about-img,
@@ -301,7 +308,7 @@ ul {
 }
 
 .team-list {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     gap: 30px;
 }
@@ -388,6 +395,7 @@ ul {
 
 .footer {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -397,7 +405,7 @@ ul {
 
 
 .footer-logo-cl {
-    color: var(--acceny-txt-cl);
+    color: var(--white-txt-cl);
 }
 
 .footer-list {
@@ -408,8 +416,8 @@ ul {
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 20px;
+
 }
 
 .footer-link {
@@ -423,11 +431,15 @@ ul {
 
 /* Portfolio*/
 
+.filter {
+    padding-top: 94px;
+    padding-top: 94px;
+}
+
 .filter-list {
     display: flex;
     margin: 0 auto;
-    padding-top: 94px;
-    margin-left: 280px;
+    justify-content: center;
 }
 
 .filter-list:last-child {
@@ -435,14 +447,16 @@ ul {
 }
 
 .filter-btn {
-    min-width: 73px;
-    min-height: 38px;
+
     font-family: inherit;
-    margin: 8px;
-    width: 145px;
-    height: 38px;
-    left: 712px;
-    top: 174px;
+    margin-left: 8px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+
+
 
     background: var(--ligh-bg-cl);
     border-radius: 4px;
@@ -474,7 +488,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-top: 34px;
+    margin-top: 50px;
 }
 
 
